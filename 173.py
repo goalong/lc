@@ -6,11 +6,11 @@
 #         self.right = None
 
 class BSTIterator(object):
-    def __init__(self, root):
+    def __init__(self, root):  # no idea, need to master bst feature/
         """
         :type root: TreeNode
         """
-        
+
 
     def hasNext(self):
         """
