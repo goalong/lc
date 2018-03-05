@@ -11,5 +11,5 @@ class Solution(object):
         		return [memo[target-i], index]
         	memo[i] = index
 
-print(Solution().twoSum([2,7, 11, 15], 9))
+# print(Solution().twoSum([2,7, 11, 15], 9))
         
