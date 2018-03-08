@@ -26,16 +26,17 @@
 # 
 #
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
-#     def myPrint(self):
-#         print(self.val)
-#         if self.next:
-#             self.next.myPrint()
+    def myPrint(self):
+        print(self.val)
+        if self.next:
+            self.next.myPrint()
 
+# 链表，使用哑节点，注意进位
 
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
@@ -65,7 +66,7 @@ class Solution(object):
 
 
 
-# if __name__ == "__main__":
-#     list = ListNode(9)
-#     list.next = ListNode(8)
-#     print(Solution().addTwoNumbers(list, ListNode(1)).myPrint())
+if __name__ == "__main__":
+    list = ListNode(9)
+    list.next = ListNode(8)
+    print(Solution().addTwoNumbers(list, ListNode(1)).myPrint())

@@ -41,14 +41,14 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        # 6 star, this solution is too slow.
+        # 6 star, this solution is too slow. 思路十分巧妙
         res = ""
         for i in range(len(s)):
             res = max(self.helper(s,i,i), self.helper(s,i,i+1), res, key=len)
 
         return res
        
-        
+    # 关键的是这个辅助方法
     def helper(self,s,l,r):
         
         while 0<=l and r < len(s) and s[l]==s[r]:

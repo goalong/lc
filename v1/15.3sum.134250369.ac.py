@@ -28,7 +28,7 @@
 class Solution:
     # @return a list of lists of length 3, [[val1,val2,val3]]
     def threeSum(self, num):
-        # 6 star.
+        # 6 star. 先排序，后面从两边逼近
         num.sort()
         rs = set()
         for i in range(len(num) - 2):

@@ -50,3 +50,7 @@ class Solution:
             div //=100
         return True
         
+
+if __name__ == "__main__":
+    # assert Solution().isPalindrome(123) == False
+    assert Solution().isPalindrome(1) == True

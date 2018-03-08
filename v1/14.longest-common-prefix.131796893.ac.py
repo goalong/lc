@@ -12,7 +12,7 @@
 # Write a function to find the longest common prefix string amongst an array of
 # strings.
 # 
-#
+# 这个思路很明显，从头开始对比列表中每个字符串
 class Solution(object):
     def longestCommonPrefix(self, strs):
         """

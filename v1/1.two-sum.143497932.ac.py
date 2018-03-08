@@ -24,7 +24,7 @@
 # return [0, 1].
 # 
 # 
-#
+# 思路： 遍历列表，并使用字典记录值到索引的映射
 class Solution(object):
     def twoSum(self, nums, target):
         """
