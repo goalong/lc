@@ -41,8 +41,8 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
+        # todo, 这个解法不符合要求, 需要看一下别的解法
         node = head
-
         data_list = []
         rs = []
         while node:
