@@ -43,6 +43,7 @@ class Solution(object):
         :type target: int
         :rtype: List[List[int]]
         """
+        # 5 star, dfs
         candidates.sort()
         result = []
         self.dfs(candidates, target, 0, [],  result)

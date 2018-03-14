@@ -55,6 +55,7 @@ class Solution(object):
         :type n: int
         :rtype: str
         """
+        # 3 star, 回头看
         result = "1"
         for _ in range(1, n):
             result = self.get_result(result)
