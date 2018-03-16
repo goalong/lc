@@ -36,6 +36,7 @@ class Solution(object):
         :type path: str
         :rtype: str
         """
+        # 5 star
         path = path.split('/')
         stack = []
         for i in path:
