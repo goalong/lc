@@ -32,6 +32,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        # 6 star, no idea.
         current_sum, max_sum = -0xffffffff, -0xffffffff
         for i in nums:
             if current_sum <= 0:

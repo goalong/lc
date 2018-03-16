@@ -30,6 +30,7 @@
 class Solution(object):
     def getPermutation(self, n, k):
         # 6 star. must master.
+        # 解法非常巧妙，共有n!个序列，除了首位有(n-1)!个序列，k//(n-1)!可以确定首位，后续的每一位可以依次按照此规则计算出
         
         res = ''
         k -= 1
@@ -45,3 +46,6 @@ class Solution(object):
                 k %= fac
                 fac //= i
         return res
+
+
+print(Solution().getPermutation(5, 80))

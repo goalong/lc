@@ -37,6 +37,7 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
+        # 1 star
         try: 
         	float(s)
         	return True
