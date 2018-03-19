@@ -47,7 +47,6 @@ class Solution(object):
             return False
         last_nums = [row[-1] for row in matrix]
         low, high = 0, len(last_nums) - 1
-        middle = (low + high) // 2
         if target > last_nums[-1] or target < matrix[0][0]:
             return False
         while low < high:

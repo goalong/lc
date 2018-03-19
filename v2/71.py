@@ -9,3 +9,4 @@ class Solution:
         :type path: str
         :rtype: str
         """
+        pass

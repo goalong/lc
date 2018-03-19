@@ -31,6 +31,7 @@ class Solution(object):
         :type word2: str
         :rtype: int
         """
+        #
         len1 = len(word1)
         len2 = len(word2)
         # initialization
