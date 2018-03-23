@@ -13,6 +13,7 @@ class Solution:
         :rtype: ListNode
         """
         # 6 star, 反转链表的变形
+        # todo
         dummy = ListNode(0)
         dummy.next = head
         pass
