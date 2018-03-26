@@ -3,8 +3,6 @@
 
 
 
-
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -13,10 +11,8 @@
 #         self.right = None
 
 class Solution:
-    def generateTrees(self, n):
+    def isValidBST(self, root):
         """
-        :type n: int
-        :rtype: List[TreeNode]
+        :type root: TreeNode
+        :rtype: bool
         """
-        # todo
-        pass

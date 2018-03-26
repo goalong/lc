@@ -27,6 +27,7 @@ class Solution:
         :rtype: List[str]
         """
         # 6 star, didn't come out.
+        # 以1到3个字符为一组组成的数字且小于等于255，构成四组且没有剩余则为一个IP
         rs = []
         self.dfs(0, [], s, rs)
         return rs
@@ -42,3 +43,6 @@ class Solution:
                 self.dfs(parts+1, path+[s[:i]], s[i:], rs)
             if s and s[0] == '0':
                 break
+
+
+print(Solution().restoreIpAddresses("0000"))

@@ -33,18 +33,19 @@
 #         self.right = None
 
 class Solution(object):
-    def generateTrees(self, n):
+    def dfs(self, start, end):
         """
         :type n: int
         :rtype: List[TreeNode]
         """
+        # 6 star, 没有理解
         if start > end: return [None]
         res = []
-        for rootval in range(start, end+1):　　　　　　　　#rootval为根节点的值，从start遍历到end
+        for rootval in range(start, end+1): #rootval为根节点的值，从start遍历到end
             LeftTree = self.dfs(start, rootval-1)
             RightTree = self.dfs(rootval+1, end)
-            for i in LeftTree:　　　　　　　　　　　　　　　　#i遍历符合条件的左子树
-                for j in RightTree:　　　　　　　　　　　　  #j遍历符合条件的右子树
+            for i in LeftTree: #i遍历符合条件的左子树
+                for j in RightTree: #j遍历符合条件的右子树
                     root = TreeNode(rootval)
                     root.left = i
                     root.right = j

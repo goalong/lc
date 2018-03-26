@@ -37,6 +37,7 @@
 class Solution:
     def exist(self, board, word):
         # 6 star, must master.
+        # 每一次向上下左右查找，如果存在，将当前的先标记为#表示已经用过不能再用，再继续查找
         def dfs(x, y, word):
             if not word:
                 return True

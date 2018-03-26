@@ -31,6 +31,8 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
+        # 6 star， 没有理解
+        # 求数量，一般考虑动态规划，dp[0], dp[1], dp[2] = 1, 1, 2, 对于n>2, dp[n] = dp[0]*dp[n-1] +dp[1]*dp[[n-2] + ..+dp[n-1]*dp[0]
         dp = [1 for _ in range(n + 1)]
         for i in range(2, n + 1):
             s = 0
