@@ -47,6 +47,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: TreeNode
         """
+        # 6 star， 必须掌握， 没太理解
         if not nums:
             return None
         length = len(nums)
