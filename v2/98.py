@@ -16,3 +16,14 @@ class Solution:
         :type root: TreeNode
         :rtype: bool
         """
+        # 6 star, 多练习
+        import sys
+        return self.is_valid(-sys.maxsize, sys.maxsize, root)
+
+    def is_valid(self, min, max, node):
+        if not node:
+            return True
+        if node.val <= min or node.val >= max:
+            return False
+        return self.is_valid(min, node.val, node.left) and self.is_valid(node.val, max, node.right)
+
