@@ -47,7 +47,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        # 5 star.
+        # 3 star, 分层的变形，将分层的结果反转即可
         if not root:
             return []
         rs = []

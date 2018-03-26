@@ -33,6 +33,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: void Do not return anything, modify root in-place instead.
         """
+        # 6 star, 两个列表分别存储每个节点和每个节点的值，依据中序遍历递增的特点，此题等价为一个递增的序列中两个值交换了位置
         l, pl = [], []
         self.inorder(root, l, pl)
         l.sort()

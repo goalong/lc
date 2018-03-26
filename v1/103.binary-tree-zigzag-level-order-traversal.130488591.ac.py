@@ -48,6 +48,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
+        # 3 star, 和分层那题几乎一样，只是不同层级是否需要反转不同而已
         if not root:
             return []
         queue = [root]
