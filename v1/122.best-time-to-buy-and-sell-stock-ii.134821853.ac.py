@@ -23,6 +23,7 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
+        # 6 star, 从左到右遍历，取第一个值为较小值，如果当前位置的比后面的小，则跳过，比后面的大，则加上当前位置和较小值的差，并设后面的为较小值
         if not prices:
             return 0
         rs = 0
@@ -38,3 +39,4 @@ class Solution(object):
                     _min = prices[i+1]
             i += 1
         return rs
+

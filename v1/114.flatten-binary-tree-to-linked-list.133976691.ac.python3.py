@@ -60,7 +60,8 @@ class Solution:
         :type root: TreeNode
         :rtype: void Do not return anything, modify root in-place instead.
         """
-        # 6 star， 先序遍历非递归实现
+        # 6 star， 先序遍历非递归实现 , 没理解，需多练习
+        # todo, 几种遍历的非递归实现熟练掌握
         if not root:
             return
         stack = [root]

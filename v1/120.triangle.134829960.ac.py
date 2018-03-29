@@ -40,6 +40,7 @@ class Solution(object):
         :rtype: int
         """
         # 6 star, no idea.
+        # 求最小值，首先考虑动态规划， 从底部到顶部分别遍历每一层， 每一层索引为j的dp[j]代表从triangle[i][j]到底部路径的和的最小值
         n = len(triangle)
         dp = triangle[-1]
         for i in range(n-2, -1, -1):

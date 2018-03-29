@@ -41,3 +41,6 @@ class Solution(object):
             i += 1
         rs.sort()
         return sum(rs[-2:])
+
+
+print(Solution().maxProfit([1,2,4,2,5,7,2,4,9,0]))
