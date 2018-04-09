@@ -38,6 +38,8 @@ class Solution(object):
         :type wordDict: List[str]
         :rtype: bool
         """
+        # 6 star, 动态规划
+        # dp[i]表示s[:i]字符串是否能拆分成符合要求的字符串，如果存在s[j:i]是在字符列表里以及dp[j]为真，则dp[i]为真
         n = len(s)
         d = set(wordDict)
         dp = [False for _ in range(n+1)]
@@ -46,4 +48,5 @@ class Solution(object):
             for j in range(i):
                 if dp[j] and s[j:i] in d:
                     dp[i] = True
+                    break
         return dp[n]
