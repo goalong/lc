@@ -30,6 +30,7 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
+        # 6 star, 快慢指针
         slow = fast = head
         while fast and fast.next:
         	fast = fast.next.next

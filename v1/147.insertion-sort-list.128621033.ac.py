@@ -23,6 +23,7 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
+        # 插入排序，在排序好的序列中将新的元素插入到合适的位置
 
         if not head:
             return head

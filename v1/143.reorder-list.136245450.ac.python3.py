@@ -33,7 +33,7 @@ class Solution:
         :type head: ListNode                                                       
         :rtype: void Do not return anything, modify head in-place instead.         
         """   
-        # 4 star
+        # 4 star，思路应该就是分成两个链表然后按要求合并
         if not head or head.next is None:                                          
             return                                                                 
         node = head                                                                
