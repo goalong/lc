@@ -16,6 +16,7 @@ class Solution:
         :rtype: List[int]
         """
         # 4 star, 熟练递归及迭代实现
+        # todo, 迭代的实现
         rs = []
         self.postorder(root, rs)
         return rs
