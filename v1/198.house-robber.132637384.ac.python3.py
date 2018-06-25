@@ -28,7 +28,7 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        # 求最大值，考虑动态规划 设 f(n) 为从第 1 个数到第 n 个数的最大和，则递推公式为：
+        # 5 star, 求最大值，考虑动态规划 设 f(n) 为从第 1 个数到第 n 个数的最大和，则递推公式为：
         # f(n) = max(nums[n] + f(n - 2), f(n - 1))
         if not nums:
             return 0

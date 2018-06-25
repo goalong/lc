@@ -47,6 +47,7 @@ class Solution(object):
         :type head1, head1: ListNode
         :rtype: ListNode
         """
+		#  4 star, 计算两个链表的长度差x，让让的链表先前进x步， 然后分别对比每个节点
         len_a, len_b = 0, 0
         node_a, node_b = headA, headB
         while node_a:

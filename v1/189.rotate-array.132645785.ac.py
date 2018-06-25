@@ -35,6 +35,7 @@ class Solution(object):
         :type k: int
         :rtype: void Do not return anything, modify nums in-place instead.
         """
+        # 2 star
         n = len(nums)
         nums[:k], nums[k:] = nums[n-k:], nums[:n-k]
 

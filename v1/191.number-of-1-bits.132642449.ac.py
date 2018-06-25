@@ -24,7 +24,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        # no idea, 位操作没掌握好
+        # 4 star, no idea, 位操作没掌握好
         r = 0
         while n:
             r += n & 1

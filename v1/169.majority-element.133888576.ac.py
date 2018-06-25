@@ -24,7 +24,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        # 3 star.
+        # 5 star. 非常巧妙，想不出来呀
+        # 变量count标记可能数字的次数
         count, rs = 0, None
         for num in nums:
             if count == 0:

@@ -31,7 +31,7 @@ class Solution(object):
         :type n: int
         :rtype: str
         """
-        # 3 star.
+        # 4 star.
         rs = []
         letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         while n > 0:
@@ -39,3 +39,5 @@ class Solution(object):
             rs.append(letters[index])
             n = (n - 1) // 26 if index != 0 else n // 26
         return "".join(rs[::-1])
+
+# print(Solution().convertToTitle(1256))
