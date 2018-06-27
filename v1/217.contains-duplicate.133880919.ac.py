@@ -21,6 +21,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
+        # 2 star, 运用集合去重，然后比较长度
         length = len(nums)
         _len = len(list(set(nums)))
         return False if length == _len else True
