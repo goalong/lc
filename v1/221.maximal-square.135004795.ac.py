@@ -34,6 +34,7 @@ class Solution(object):
         :rtype: int
         """
         # 5 star, idea: http://bookshadow.com/weblog/2015/06/03/leetcode-maximal-square/
+        # dp[x][y]表示（x,y)向左以及向上所能组成的最大正方形的变长
         if not matrix:
             return 0
         m = len(matrix)

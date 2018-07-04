@@ -24,6 +24,7 @@ class Solution(object):
         :type t: int
         :rtype: bool
         """
+        # 6 star, no idea
         if k == 0:
             return False
         n = len(nums)
