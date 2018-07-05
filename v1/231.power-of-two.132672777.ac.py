@@ -23,7 +23,6 @@ class Solution(object):
         :rtype: bool
         """
         # 3 star
-        from math import sqrt
         if n <= 0:
             return False
         while n >= 2:

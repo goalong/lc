@@ -26,6 +26,7 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
+        # 6 star, 把后半部分翻转，然后和前半部分逐一对照
         fast, slow = head, head
         while fast and fast.next:
             fast = fast.next.next

@@ -18,6 +18,7 @@ class Solution(object):
         """
         # 6 star, no idea
         # 递归解决，向左右子树递归查找，直到找到p或q, 此时left和right的值有两种情况，一种是一个是lca一个是None, 另一种是分别是p和q
+        # 这个代码太简洁了，还得好好消化
         if not root or root in (p, q):
             return root
         left = self.lowestCommonAncestor(root.left, p, q)
