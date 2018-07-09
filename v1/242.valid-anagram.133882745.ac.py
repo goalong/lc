@@ -31,6 +31,7 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
+        # 3 star, 将两个字符串分别排序，比较排序后的结果是否相同
         _s = sorted(s)
         _t = sorted(t)
         return _s == _t
