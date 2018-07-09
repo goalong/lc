@@ -28,7 +28,7 @@ class Solution(object):
             rs.append(path)
             return
         if node.left:
-            self.dfs(node.left, path + [str(node.val)], rs)
+            self.dfs(node.left, path + [str(node.val)], rs)   #注意这里参数赋值的位置
         if node.right:
             self.dfs(node.right, path + [str(node.val)], rs)
 
