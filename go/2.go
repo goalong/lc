@@ -13,6 +13,7 @@ package main
 //	Next *ListNode
 //	}
 
+// 2 star
 //方法很简单直接，但是有许多边角情况需要处理，容易漏掉或出错
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	var extra, current int
