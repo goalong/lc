@@ -19,7 +19,7 @@ func longestPalindrome(s string) string {
 	return string(maxByte)
 }
 
-
+// 核心是这个函数，left和right两个索引不断比较它们的值是否相同，如果相同就继续向两边扩展
 func getLength(s_bytes []byte, left int, right int) []byte {
 	length := len(s_bytes)
 	for left >= 0 && right < length {
