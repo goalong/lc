@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+//import "fmt"
 
 func longestPalindrome(s string) string {
 	var byte1, byte2, maxByte, current []byte
@@ -22,7 +22,7 @@ func longestPalindrome(s string) string {
 
 func getLength(s_bytes []byte, left int, right int) []byte {
 	length := len(s_bytes)
-	for left > 0 && right < length {
+	for left >= 0 && right < length {
 		if s_bytes[left] == s_bytes[right] {
 			left -= 1
 			right += 1
@@ -35,8 +35,8 @@ func getLength(s_bytes []byte, left int, right int) []byte {
 }
 
 
-func main() {
-	s := "cbbd"
-	a := longestPalindrome(s)
-	fmt.Println(a)
-}
+//func main() {
+//	s := "cbbd"
+//	a := longestPalindrome(s)
+//	fmt.Println(a)
+//}
