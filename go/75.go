@@ -1,7 +1,7 @@
 
 //package main
 
-//计数排序，计算每个元素的个数
+//5 star, 计数排序，计算每个元素的个数
 func sortColors(nums []int)  {
 	count := make([]int, 3)
 	for _, num := range nums {
