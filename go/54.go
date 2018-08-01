@@ -2,6 +2,7 @@
 //
 //import "fmt"
 
+// 不断变更matrix，每次依次按四个方向取出一行或一列加到结果的切片上
 func spiralOrder(matrix [][]int) []int {
 	var last, temp []int
 	var first int
