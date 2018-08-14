@@ -2,7 +2,8 @@
 //package main
 
 
-// 6 star, 动态规划，
+// 6 star, 动态规划，dp[i][j] 代表以i,j为右下角的最大正方形的边长
+// dp[i[[j] = min(dp[i-1][j], dp[i-1][j-1], dp[i][j-1]) + 1
 func maximalSquare(matrix [][]byte) int {
 	cols := len(matrix)
 	if cols == 0 {return 0}

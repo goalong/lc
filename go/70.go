@@ -3,6 +3,7 @@
 //
 //import "fmt"
 
+// 动态规划，dp[i] = dp[i-1] + dp[i-2]
 func climbStairs(n int) int {
 	if n < 2 {
 		return n
