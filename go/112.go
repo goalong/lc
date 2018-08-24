@@ -1,7 +1,6 @@
 
 package main
 
-import "github.com/astaxie/beego"
 
 type TreeNode struct {
 	Val   int
