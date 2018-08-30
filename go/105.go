@@ -7,14 +7,7 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-func index(slice []int, item int) int {
-	for i, _ := range slice {
-		if slice[i] == item {
-			return i
-		}
-	}
-	return -1
-}
+
 
 // 6 star, no idea
 // 前序遍历，第一个值即为跟节点的值，然后在中序遍历的结果中找到根节点的索引，该索引前后即分别为二叉树的左右子树，递归执行
