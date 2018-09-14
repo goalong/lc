@@ -8,6 +8,7 @@ class Solution:
         :type x: int
         :rtype: bool
         """
+        # 4 star, 不断比较当前数字的首位和末位，如果一样则去除首尾两个数字，继续比较剩下部分的首位和末位
         # 重点在如何得到一个数字的左边和右边的数
         if x < 0:
             return False

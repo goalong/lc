@@ -8,6 +8,7 @@ class Solution:
         :type digits: str
         :rtype: List[str]
         """
+        # 5 star
         # dfs, ac了但是很慢，看看更好的解法
         if digits == "":
             return []

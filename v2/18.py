@@ -9,7 +9,7 @@ class Solution:
         :type target: int
         :rtype: List[List[int]]
         """
-        # 思路同3sum, 分别对前两个遍历，后两个从两边逼近
+        # 5 star, 思路同3sum, 分别对前两个遍历，后两个从两边逼近
         nums.sort()
         rs = set()
         for i in range(len(nums) - 3):

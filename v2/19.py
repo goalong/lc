@@ -16,7 +16,9 @@ class Solution:
         :type n: int
         :rtype: ListNode
         """
-        # 快慢指针法
+        # 4 star, 双指针法, 使用了哑节点，将其指向链表的头节点，
+        # 第一个指针从哑节点开始往前前进n步，然后第二个节点和第一个节点一同往前遍历，
+        # 直到第一个指针到达链表末尾，这时第二个指针指向的就是目标节点
         dummy = ListNode(0)
         dummy.next = head
         slow = fast = dummy

@@ -10,6 +10,7 @@ class Solution:
         :type target: int
         :rtype: int
         """
+        # 5 star, 与3sum类似，只是每次不是与0做比较而是与目标数字做比较
         nums.sort()
         rs = nums[0] + nums[1] + nums[2]
         for i in range(len(nums) - 2):

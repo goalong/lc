@@ -7,6 +7,8 @@ class Solution:
         :type nums: List[int]
         :rtype: List[List[int]]
         """
+        # 4 star, 先排序，然后最外层一个遍历，将当且的数字和余下部分的首尾的数字之和与0做比较，如果比0小
+        # 将左指针向前一位，比0大将右指针向后一位，等于0则加到结果集里
         nums.sort()
         rs = set()
         for i in range(len(nums)-2):
