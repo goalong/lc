@@ -8,7 +8,7 @@ class Solution:
         :type n: int
         :rtype: List[str]
         """
-        # dfs, left right分别是剩余的左右括号的数量，
+        # 6 star, dfs, left right分别是剩余的左右括号的数量，
         rs = []
         self.helper(n, n, "", rs)
         return rs

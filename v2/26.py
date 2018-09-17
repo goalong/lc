@@ -8,6 +8,7 @@ class Solution:
         :rtype: int
         """
         # todo, 需要加深理解，还不能很顺利的做出
+        # 5 star, 双指针法，后面的指针只有在前边的指针遇到了新的数值时才向前移动
         if not nums:
             return 0
         j = 0
