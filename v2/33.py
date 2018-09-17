@@ -8,7 +8,8 @@ class Solution:
         :type target: int
         :rtype: int
         """
-        # 二分法, 这个是先比较左右两边和中间的大小，来进行排除，然后比较中间的和目标数字
+        # 5 star, 二分法,
+        # 这个是先比较左右两边和中间的大小，分类讨论来进行排除一半，然后比较中间的和目标数字
         left, right = 0, len(nums) - 1
         while left <= right:
             middle = (left+right)//2

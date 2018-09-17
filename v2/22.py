@@ -8,7 +8,9 @@ class Solution:
         :type n: int
         :rtype: List[str]
         """
-        # 6 star, dfs, left right分别是剩余的左右括号的数量，
+
+        # 5 star, 优先添加左括号，当剩余的右括号比左括号多时可以添加右括号
+        # dfs, left right分别是剩余的左右括号的数量，
         rs = []
         self.helper(n, n, "", rs)
         return rs

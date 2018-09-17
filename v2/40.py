@@ -12,7 +12,7 @@ class Solution:
         :type target: int
         :rtype: List[List[int]]
         """
-        # 5 star, dfs
+        # 5 star, dfs，需要注意去重
         candidates.sort()
         rs = []
         self.dfs(0, candidates, [], rs, target)

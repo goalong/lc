@@ -11,7 +11,7 @@ class Solution:
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        # 6 star, dfs
+        # 6 star, 排序，然后dfs，需要去重
         nums.sort()
         rs = []
         self.dfs(nums, [], rs)
