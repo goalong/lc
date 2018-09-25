@@ -11,6 +11,7 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         # 6 star, 起初用dfs做的，结果一直超时，
+        # todo, 这个解法是别处看来的，需要自己再做
         if k > n:
             return []
         if k == 1:
