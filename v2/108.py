@@ -17,6 +17,7 @@ class Solution:
         :rtype: TreeNode
         """
         # 6 star, 没有完全理解
+        # 中间位置的为root, 左半边为左子树，右半边为右子树，递归处理
         if not nums:
             return None
         length = len(nums)

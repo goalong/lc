@@ -17,6 +17,7 @@ class Solution:
         :rtype: bool
         """
         # 6 star, 多加练习
+        # 构造一个height函数，计算每个节点的高度，然后递归比较左右子树的高度
         if not root:
             return True
         if abs(self.height(root.left)-self.height(root.right)) <= 1:
