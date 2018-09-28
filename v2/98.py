@@ -21,6 +21,7 @@ class Solution:
         return self.is_valid(-sys.maxsize, sys.maxsize, root)
 
     def is_valid(self, min, max, node):
+        # 注意引入了上限和下限两个变量来比较
         if not node:
             return True
         if node.val <= min or node.val >= max:
