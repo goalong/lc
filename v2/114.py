@@ -17,7 +17,7 @@ class Solution:
         :rtype: void Do not return anything, modify root in-place instead.
         """
         # 6 star, 没理解，需多看
-        # 先序遍历的非递归实现
+        # 先序遍历的非递归实现，prev记录先序遍历的上一个，cur是当前的，把prev的左子树指向None，右子树指向cur即可，然后prev=cur
         if not root:
             return
         stack = [root]
