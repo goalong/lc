@@ -17,6 +17,7 @@ class Solution:
         :rtype: int
         """
         # 6 star, 分类讨论的情形比较巧妙，一开始做错了
+        # todo, 需要掌握
         if not root:
             return 0
         return self._minDepth(root)

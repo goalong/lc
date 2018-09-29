@@ -18,6 +18,7 @@ class Solution:
         :rtype: bool
         """
         # 6 star， no idea, dfs, 必须掌握
+        # todo, 必须掌握
         if not root:
             return False
         rs = self.dfs(root.val, root, sum)
@@ -33,5 +34,6 @@ class Solution:
                 left = self.dfs(current+node.left.val, node.left, sum)
             if node.right:
                 right = self.dfs(current+node.right.val, node.right, sum)
+            # 左边或者右边的和等于sum了，则True
             if left or right:
                 return True

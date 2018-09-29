@@ -11,6 +11,7 @@ class Solution:
         :rtype: List[List[int]]
         """
         # 6 star, dfs, 多练习
+        # 先排序，然后dfs, 注意不能重复
         nums.sort()
         rs = []
         self.dfs([], rs, 0, nums)

@@ -19,6 +19,7 @@ class Solution:
         :rtype: List[List[int]]
         """
         # 6 star, dfs
+        # 就是dfs计算所有的路径和，有符合要求的就将路径加到结果集中
         if not root:
             return []
         rs = []
