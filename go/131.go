@@ -3,6 +3,8 @@
 //
 //import "fmt"
 
+
+// 6 star，dfs, 从前往后遍历，每遇到一个回文，将其加入到路径path中，然后继续遍历后面的
 func partition(s string) [][]string {
 	var ret [][]string
 	dfs(s, []string{}, &ret)

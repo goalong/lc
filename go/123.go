@@ -3,7 +3,7 @@
 
 
 // 6 star, 动态规划
-// dp[i]表示到第i天的最大收益, 
+// dp[i]表示到第i天的最大收益, nax_price为最大售价，每次减去price[i]得到第i天之后的利润，加上dp[i – 1]即为两次买卖的值
 
 func maxProfit(prices []int) int {
 	length := len(prices)

@@ -16,6 +16,8 @@ class Solution(object):
         :rtype: RandomListNode
         """
         # 6 star，必须掌握，未理解
+        # 首先遍历链表，创建一个各个节点对应的新的链表中的节点的映射，新的节点和原来对应节点的值label相同,
+        # 接下来再次遍历链表，将新的节点的next和random属性给补上，这俩属性可以用前面的映射找到
         memo = {}
         node = head
         while node:
