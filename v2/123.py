@@ -1,6 +1,7 @@
 
 
 
+# 题意:给定股票每日的售价，求最多两次买卖最多可以获取多大利润？
 
 # class Solution:
 #     def maxProfit(self, prices):
@@ -35,23 +36,23 @@ class Solution:
     # @param prices, a list of integer
     # @return an integer
     def maxProfit(self, prices):
-        # 6 star, todo, 没有理解
+        # 6 star, todo, 没有理解，几次做错了
         # https://www.hrwhisper.me/leetcode-best-time-to-buy-and-sell-stock-i-ii-iii-iv/
-        if not prices:
-            return 0
-        n = len(prices)
-        dp, money, profit = [], prices[0], 0
-        for i in range(n):
-            profit = max(profit, prices[i] - money)
-            money = min(money, prices[i])
-            dp.append(profit)
+        #  动态规划，dp[i]表示到第i天能获取的最大收益，两次操作的最大收益等于第i天之后的最大价格减去第i天的价格加上dp[i-1]
+        # dp[i] = max(dp[i-1], prices[i]-min_price)
+        if not prices: return 0
+        dp = [0] * len(prices)
+        min_price = prices[0]
+        for i in range(1, len(prices)):
+            dp[i] = max(dp[i - 1], prices[i] - min_price)
+            min_price = min(prices[i], min_price)
 
-        i, ans, money, profit = n - 1, dp[n - 1], prices[n - 1], 0
-        while i >= 0:
-            profit = max(profit, money - prices[i])
-            money = max(money, prices[i])
-            ans = max(ans, dp[i] + profit)
-            i -= 1
+        ans = dp[-1]
+        max_price = prices[-1]
+        for i in range(len(prices) - 2, 0, -1):
+            ans = max(ans, max_price - prices[i] + dp[i - 1])
+            max_price = max(max_price, prices[i])
+
         return ans
 
 
