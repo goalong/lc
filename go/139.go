@@ -4,6 +4,7 @@
 //
 //import "fmt"
 
+// 6 star, 动态规划，dp[i]代表s[:i]能否被数组里的字符串组合成，如果s[j:i]在数组中，且dp[j]为true，则dp[i]为true
 func wordBreak(s string, wordDict []string) bool {
 	length := len(s)
 	dp := make([]bool, length+1)
