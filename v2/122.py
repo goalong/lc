@@ -8,7 +8,7 @@ class Solution:
         :type prices: List[int]
         :rtype: int
         """
-        # 6 star, 从左到右遍历，如果当前比后面的大，则将当前和之前记录的较小值的差加到结果中，并设后面的为较小值， 注意最后一个的边界条件
+        # 6 star, 从左到右遍历，如果当前比后面的一个数值大，则将当前和之前记录的较小值的差加到结果中，并设后面的为较小值， 注意最后一个的边界条件
         length = len(prices)
         if length <= 1:
             return 0
