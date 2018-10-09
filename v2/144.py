@@ -24,3 +24,23 @@ class Solution:
             self.preorder(node.left, rs)
             self.preorder(node.right, rs)
 
+
+class Solution:
+    def preorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        if not root:
+            return []
+        stack = [root]
+        ret = []
+        while stack:
+            node = stack.pop()
+            ret.append(node.val)
+            if node.right:
+                stack.append(node.right)
+            if node.left:
+                stack.append(node.left)
+        return ret
+
