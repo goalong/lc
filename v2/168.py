@@ -8,7 +8,7 @@ class Solution:
         :type n: int
         :rtype: str
         """
-        # 3 star.
+        # 3 star, 相当于是26进制
         rs = ""
         letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         while n > 0:

@@ -7,7 +7,7 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        # 3 star, 直接从头到尾遍历
+        # 2 star, 直接从头到尾遍历
         length = len(nums)
         if length == 1:
             return 0
