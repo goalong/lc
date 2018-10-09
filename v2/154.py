@@ -7,7 +7,7 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        # 6 star, 二分法，但不好处理
+        # 6 star, 二分法，但不好处理，思路同153，只是加上对相等元素的处理
         low, high = 0, len(nums) - 1
         while low < high:
             mid = (low+high)//2
