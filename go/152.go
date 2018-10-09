@@ -3,8 +3,10 @@
 
 //import "fmt"
 
-// 6 star, no idea, 由于负负得正，所以负数的结果也要记录, positive = max(nums[i], positive*nums[i])
-// negative = min(negative, nums[i])
+// 6 star, no idea, 由于负负得正，所以负数的结果也要记录
+// positive = max(num, positive * num, negative * num)
+// negative = min(num, temp * num, negative * num)
+// go里没有直接提供max min这样的函数，所以代码里写的比较冗长
 func maxProduct(nums []int) int {
 	var temp int
 	positive, negative,  max := nums[0], nums[0], nums[0]
