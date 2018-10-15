@@ -6,7 +6,7 @@ class Solution:
         :rtype: int
         """
         # 6 star, 动态规划，分包含和不包含第一个两种情况
-        # dp[x] = max(dp[x-1], dp[x-2] + nums[x])
+        # 状态转移方程：dp[x] = max(dp[x-1], dp[x-2] + nums[x])
         # todo, 重写一下，构造一个函数来处理
         if not nums:
             return 0
