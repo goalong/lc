@@ -6,6 +6,9 @@ class MyStack(object):
         Initialize your data structure here.
         """
         # 5 star, 一个队列专门用来入栈，出栈时将其倒入另一个队列直到最后一个
+        # queue_a 用来入栈，入栈直接往里加就行了
+        # 对于出栈， 将queue_a的从队首一个个取出然后让入queue_b, 直到取出最后一个，最后一个就是要出栈的，不再往queue_b中放，
+        # 然后交换queue_a queue_b
         self.queue_a = []
         self.queue_b = []
 
