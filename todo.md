@@ -3,6 +3,53 @@
 ### 3 star 以上的题目
 * 3 最长的没有重复字符的字串
 
+Python:
+
+```python
+class Solution:
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        # 6 star, 遍历字符串，使用字典记录每个字母到索引的映射
+        # 没有重复字符的子字符串为一个目标字符串，遍历所有字符，记录字符到索引的映射，如果一个字符在目标子串中且其下标比目标子串的起始下标大，则需要更新目标子串的起始下标
+        rs, start = 0, 0
+        memo = {}
+        for index, v in enumerate(s):
+            # 当前字母不在s[start:index]范围内，可以继续向前遍历
+            if v not in memo or memo[v] < start:
+                rs = max(rs, index + 1 - start)
+            # 当前字母在s[start:index]有重复，新的起点从重复字母索引的下一位开始
+            else:
+                start = memo[v] + 1
+            memo[v] = index
+        return rs
+```
+Go:
+
+```
+func lengthOfLongestSubstring(s string) int {
+    start := 0
+    max := 0
+    memo := make(map[string]int)
+    for index := 0; index < len(s); index++ {
+        c := string(s[index])
+        val, ok := memo[c]
+        if ok && val >= start {
+            start = val + 1
+        }
+        memo[c] = index
+        if index +1 - start > max {
+            max = index +1 - start
+        } 
+        
+    }
+    return max
+    
+}
+```
+
 
 
 * 5
