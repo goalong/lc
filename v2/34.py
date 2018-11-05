@@ -9,7 +9,7 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-        # 二分查找，注意边界条件
+        # 5 star. 二分查找，注意边界条件
         low, high = 0, len(nums) - 1
         while low <= high:
             middle = (low+high)//2
