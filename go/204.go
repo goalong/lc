@@ -33,5 +33,5 @@ func countPrimes(n int) int {
 
 
 func main() {
-	fmt.Println(countPrimes(10))
+	fmt.Println(countPrimes(3))
 }

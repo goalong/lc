@@ -1,17 +1,16 @@
-package main
-
+//package main
+//
 //import "fmt"
 
 func longestPalindrome(s string) string {
-	var byte1, byte2, maxByte, current []byte
-	s_bytes := []byte(s)
-	for index, _ := range s_bytes {
-		byte1 = getLength(s_bytes, index, index)
-		byte2 = getLength(s_bytes, index, index+1)
-		if len(byte1) > len(byte2) {
-			current = byte1
+	var ret1, ret2, maxByte, current string
+	for index, _ := range s {
+		ret1 = getLength(s, index, index)
+		ret2 = getLength(s, index, index+1)
+		if len(ret1) > len(ret2) {
+			current = ret1
 		} else {
-			current = byte2
+			current = ret2
 		}
 
 		if len(current) > len(maxByte) {maxByte = current}
@@ -20,10 +19,9 @@ func longestPalindrome(s string) string {
 }
 
 // 核心是这个函数，left和right两个索引不断比较它们的值是否相同，如果相同就继续向两边扩展
-func getLength(s_bytes []byte, left int, right int) []byte {
-	length := len(s_bytes)
-	for left >= 0 && right < length {
-		if s_bytes[left] == s_bytes[right] {
+func getLength(s string, left int, right int) string {
+	for left >= 0 && right < len(s) {
+		if s[left] == s[right] {
 			left -= 1
 			right += 1
 		} else {
@@ -31,7 +29,7 @@ func getLength(s_bytes []byte, left int, right int) []byte {
 		}
 
 	}
-	return s_bytes[left+1:right]
+	return s[left+1:right]
 }
 
 
