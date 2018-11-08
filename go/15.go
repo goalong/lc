@@ -1,9 +1,9 @@
-package main
-
-import (
-	"fmt"
-	"sort"
-)
+//package main
+//
+//import (
+//	"fmt"
+//	"sort"
+//)
 
 // 一开始的思路还是for循环将其转换为2sum，但是这个解法不太好
 //先排序，然后for循环遍历，对之后的部分进行首尾相加，如果结果大于0，则将右边的索引减1，
@@ -40,9 +40,9 @@ func threeSum(nums []int) [][]int {
 }
 
 
-func main() {
-	nums := []int {-1,0,1,0}
-	//nums := []int {0,0,0,0,0,0,0,0,0,0,0,0}
-	ret := threeSum(nums)
-	fmt.Println(ret)
-}
+//func main() {
+//	nums := []int {-1,0,1,0}
+//	//nums := []int {0,0,0,0,0,0,0,0,0,0,0,0}
+//	ret := threeSum(nums)
+//	fmt.Println(ret)
+//}
