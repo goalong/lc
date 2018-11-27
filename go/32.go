@@ -1,6 +1,6 @@
-//package main
-//
-//import "fmt"
+package main
+
+import "fmt"
 
 // 6 star, 非常巧妙
 // 动态规划，dp[i]表示以s[i]结尾的字符串所能组成的合规的子字符串的最大长度
@@ -35,7 +35,18 @@ func longestValidParentheses(s string) int {
 
 }
 
-//func main() {
-//	ret := longestValidParentheses("()()))))()()(")
-//	fmt.Println(ret)
-//}
+func main() {
+	ret := longestValidParentheses("()()))))()()(")
+	fmt.Println(ret)
+
+	m := make(map[string]string)
+	fmt.Println("start")
+
+	m["ha"] = "ha"
+	m["he"] = "he"
+
+	for k, v := range m {
+		m[k+"hello"] = v
+		fmt.Println(k, v)
+	}
+}
