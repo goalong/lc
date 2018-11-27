@@ -13,7 +13,7 @@ class Solution:
         :rtype: void Do not return anything, modify nums1 in-place instead.
         """
         # 在nums1中从预留的最后一个位置，逐个对比两个数组的末尾的值，并向新的位置填充
-        # 4 star
+        # 3 star
         index = m + n - 1
         while m > 0 and n > 0:
             if nums1[m-1] >= nums2[n-1]:
