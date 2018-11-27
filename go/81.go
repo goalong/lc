@@ -2,7 +2,7 @@
 //import "fmt"
 
 // 6 star, 需要注意特殊情况
-// 终点是二分之后，必然有一半是有序的，对target在有序的那一半比较是一种情况，在另一半是另一种情况
+// 重点是二分之后，必然有一半是有序的，对target在有序的那一半比较是一种情况，在另一半是另一种情况
 func search(nums []int, target int) bool {
 	var mid int
 	length := len(nums)
