@@ -48,3 +48,6 @@
 * [98. Validate Binary Search Tree](notes/98.md)
 * [99. recover Binary Search Tree](notes/99.md)
 * [100. Same Tree](notes/100.md)
+* [101. Symmetric Tree](notes/101.md)
+* [102. Binary Tree Level Order Traversal](notes/102.md)
+
