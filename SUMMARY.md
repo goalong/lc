@@ -50,4 +50,12 @@
 * [100. Same Tree](notes/100.md)
 * [101. Symmetric Tree](notes/101.md)
 * [102. Binary Tree Level Order Traversal](notes/102.md)
+* [104. Maximum Depth of Binary Tree](notes/104.md)
+* [105. Construct Binary Tree from Preorder and Inorder Traversal](notes/105.md)
+* [108. Convert Sorted Array to Binary Search Tree](notes/108.md)
+* [110. Balanced Binary Tree](notes/110.md)
+* [111. Minimum Depth of Binary Tree](notes/111.md)
+* [112. Path Sum](notes/112.md)
+* [113. Path Sum II](notes/113.md)
+
 
