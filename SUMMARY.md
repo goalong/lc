@@ -57,5 +57,7 @@
 * [111. Minimum Depth of Binary Tree](notes/111.md)
 * [112. Path Sum](notes/112.md)
 * [113. Path Sum II](notes/113.md)
+* [114. Flatten Binary Tree to Linked List](notes/114.md)
+* [118. Pascal's Triangle](notes/118.md)
 
 
