@@ -23,6 +23,7 @@
 class Solution:
     # @param {integer[]} nums
     # @return {string}
+    # 5 star,
     def largestNumber(self, nums):
         def compare(a, b):
             return int(b+a) - int(a+b)

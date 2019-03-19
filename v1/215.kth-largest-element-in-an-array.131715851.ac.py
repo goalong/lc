@@ -29,6 +29,8 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+        # 5 star, 不能排序呢
+        # todo
         nums.sort(reverse=True)
         return nums[k-1]
         
