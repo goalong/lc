@@ -1,20 +1,17 @@
-
-
-
-
-class Solution:
+class Solution(object):
     def convertToTitle(self, n):
         """
         :type n: int
         :rtype: str
         """
-        # 3 star, 相当于是26进制
-        rs = ""
+        # 4 star, 进制转换，26进制
         letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        ret = ""
         while n > 0:
-            extra = (n-1) % 26
-            rs = letters[extra] + rs
-            n = (n - extra) // 26
-        return rs
+            n, extra = divmod(n - 1, 26)  # 注意这里需要用n-1而不是n对26进行divmod运算
+            ret += letters[extra]
+        return ret[::-1]
 
-# print(Solution().convertToTitle(1265))
+
+
+

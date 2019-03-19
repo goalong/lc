@@ -1,23 +1,20 @@
-
-
-
-class Solution:
+class Solution(object):
     def majorityElement(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        # 5 star, 必须掌握
-        # 变量rs代表可能的占超过一半的数字，count是该数字出现的次数，遍历数组，
-        # 如果count=0,  则用当前数字作为rs, 如果当前数字和rs相等，则count加1，不等则count减1
-        count = 0
-        rs = None
-        for num in nums:
-            if count == 0:
-                rs = num
-            if num == rs:
+        # 4 star，做出来了，首先假定第一个数字就是Majority Element，
+        # 并且将它的count记为1，到后面如果遇到相同的数字，则将count加1，否则减1，
+        # 减到0的时候需要变换当前的数字为Majority Element，重复该过程，最后剩下的就是要求的数字
+        m = nums[0]
+        count = 1
+        for num in nums[1:]:
+            if num == m:
                 count += 1
             else:
                 count -= 1
-        return rs
-
+                if count == 0:
+                    m = num
+                    count = 1
+        return m
