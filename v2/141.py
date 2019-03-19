@@ -1,6 +1,9 @@
 
-
-
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
 
 class Solution(object):
     def hasCycle(self, head):
@@ -8,11 +11,13 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
-        # 6 star, 判断链表有无环，使用双指针，一快一慢,如果有环，则快慢会相遇，否则即没有环
-        # 快的一次走两步，慢的一次走一步
+        # 5 star，快慢指针法， 一个一次走两步，一个一次走一步，
+        # 当快的指针前进到为空或者其next为空时，说明是无环的，当快慢指针在行进中相等时说明是有环的
         slow = fast = head
-        while fast and fast.next:
+        while slow:
             slow = slow.next
+            if not fast or not fast.next:
+                return False
             fast = fast.next.next
             if slow == fast:
                 return True

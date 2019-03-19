@@ -25,22 +25,30 @@ class Solution:
             self.preorder(node.right, rs)
 
 
-class Solution:
+
+
+class Solution(object):
     def preorderTraversal(self, root):
         """
         :type root: TreeNode
         :rtype: List[int]
         """
+        # 6 star, 递归版很简单，迭代版没写出来
+        # 使用栈，先入右子树，再入左子树，迭代时后入先出，因此会先迭代左子树
         if not root:
             return []
         stack = [root]
         ret = []
         while stack:
-            node = stack.pop()
-            ret.append(node.val)
-            if node.right:
-                stack.append(node.right)
-            if node.left:
-                stack.append(node.left)
+            cur = stack.pop()
+            ret.append(cur.val)
+            if cur.right:
+                stack.append(cur.right)
+            if cur.left:
+                stack.append(cur.left)
         return ret
+
+
+
+
 
