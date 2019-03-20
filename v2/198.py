@@ -7,7 +7,7 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        # 5 star, 求最大值，考虑动态规划，状态转移方程为 dp[x] = max(dp[x-1], nums[x] + dp[x-2])
+        # 5 star, pass, 已掌握，求最大值，考虑动态规划，状态转移方程为 dp[x] = max(dp[x-1], nums[x] + dp[x-2])
         # dp[x] 表示从下标0到下标x 所能获取的价值的最大值，从第二个开始不断往后递推
         num_count = len(nums)
         if num_count < 3:
