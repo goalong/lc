@@ -34,8 +34,8 @@ class Solution:
         :type root: TreeNode
         :rtype: List[int]
         """
-        # 5 star，不熟练，多练习
-        # 非递归写法, 先一直往左遍历，并加到栈中，然后到最左子树后，开始出栈，如果有右节点，将右节点入栈
+        # 6 star，no idea，多练习
+        # 非递归写法, 先一直往左遍历，并加到栈中，然后到最左子树后，开始出栈，如果有右节点，将右节点入栈，然后继续尝试往左遍历
         if not root:
             return []
         stack = []
