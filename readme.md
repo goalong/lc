@@ -1,5 +1,6 @@
 Leetcode刷题记录，使用python和golang, 持续更新中。
 
+
 ### Part I
 
 * [3. Longest Substring Without Repeating Characters](notes/3.md)
@@ -59,5 +60,47 @@ Leetcode刷题记录，使用python和golang, 持续更新中。
 * [113. Path Sum II](notes/113.md)
 * [114. Flatten Binary Tree to Linked List](notes/114.md)
 * [118. Pascal's Triangle](notes/118.md)
+* [119. Pascal's Triangle II](notes/119.md)
+* [120. Triangle](notes/120.md)
+* [121. Best Time to Buy and Sell Stock](notes/121.md)
+* [122. Best Time to Buy and Sell Stock II](notes/122.md)
+* [123. Best Time to Buy and Sell Stock III](notes/123.md)
+* [129. Sum Root to Leaf Numbers](notes/129.md)
+* [131. Palindrome Partitioning](notes/131.md)
+* [134. Gas Station](notes/134.md)
+* [138. Copy List with Random Pointer](notes/138.md)
+* [139. Word Break](notes/139.md)
+* [140. Word Break II](notes/140.md)
+* [141. Linked List Cycle](notes/141.md)
+* [144. Binary Tree Preorder Traversal](notes/144.md)
+* [145. Binary Tree Postorder Traversal](notes/145.md)
+* [152. Maximum Product Subarray](notes/152.md)
+* [153. Find Minimum in Rotated Sorted Array](notes/153.md)
+* [154. Find Minimum in Rotated Sorted Array II](notes/154.md)
+* [188. Best Time to Buy and Sell Stock IV](notes/188.md)
+* [204. Count Primes](notes/204.md)
+* [209. Minimum Size Subarray Sum](notes/209.md)
+* [215. Kth Largest Element in an Array](notes/215.md)
+* [220. Contains Duplicate III ](notes/220.md)
+* [221. Maximal Square](notes/221.md)
+* [235. Lowest Common Ancestor of a Binary Search Tree](notes/235.md)
+* [236. Lowest Common Ancestor of a Binary Tree](notes/236.md)
+* [239. Sliding Window Maximum](notes/239.md)
+* [264. Ugly Number II](notes/264.md)
+* [300. Longest Increasing Subsequence](notes/300.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
