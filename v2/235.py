@@ -40,3 +40,30 @@ class Solution(object):
                 ptr = ptr.right
             path.append(ptr)
         return path
+
+
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution2(object):
+    def lowestCommonAncestor(self, root, p, q):
+        """
+        :type root: TreeNode
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: TreeNode
+        """
+        # 6 star, 巧妙的解法
+        if p.val > q.val:
+            p, q = q, p
+        while root:
+            if root.val < p.val:
+                root = root.right
+            elif root.val > q.val:
+                root = root.left
+            else:
+                return root
